@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Вход</title>
+    <style>
+        body {
+            background-color: #E1F0FF;
+            text-align: center;
+            color: #6A6BA3;
+        }
+        form {
+            display: inline-block;
+            width: 220px;
+        }
+        input {
+            margin: 0 0 20px 0;
+            color: #0000CD;
+        }
+        button {
+            color: #000080;
+        }
+    </style>
+</head>
+<body>
+<form method="POST">
+    <p style="display: inline-block;"><b>
+            {% if (isRegistration) %}
+                Ваши данные отправлены! Войдите, используя свой логин и пароль:
+            {% elseif isAuthorization and user is empty %}
+                Неправильный логин и пароль!
+            {% else %}
+                Войдите или зарегистрируйтесь:
+            {% endif %}
+        </b></p>
+    <input name="login" id="login" placeholder="Логин">
+    <input name="password" id="password" placeholder="Пароль">
+    <button type="submit" name="registration">Регистрация</button>
+    <button type="submit" name="authorization">Вход</button>
+</form><br>
+</body>
+</html>
+</html>

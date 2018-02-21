@@ -1,0 +1,12 @@
+{
+  "name": "zack/test",
+  "authors": [
+    {
+      "name": "Zackryzhnyy Igor",
+      "email": "zack-1988@mail.ru"
+    }
+  ],
+  "require": {
+    "twig/twig": "~1.0"
+  }
+}
